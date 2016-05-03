@@ -1,0 +1,229 @@
+/******************************************************************* Header Section ****************************************************************/
+/* this linear-gradient is a custom color that I added to the header to make the logo visible */
+header {
+  background-image: linear-gradient(#04519b, #044687 60%, #033769);
+  color: #fff;
+  min-height: 100px;
+  padding-top: 25px;
+}
+
+header form {
+  float: right;
+}
+
+header .logo {
+  float: left;
+}
+
+/*Changed the panel heading here to give it the same color as the header*/
+.panel-heading {
+  background-image: linear-gradient(#04519b, #044687 60%, #033769);
+  color: #fff !important;
+}
+
+/* Chat bubble Custom style, this gives the chat bubble the point effect */
+.bubble {
+  position: relative;
+  width: 580px;
+  min-height: 65px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #fff;
+  display: block;
+  width: 0;
+  z-index: 1;
+  margin-top: -15px;
+  left: -15px;
+  top: 50%;
+}
+.bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #ccc;
+  display: block;
+  width: 0;
+  z-index: 0;
+  margin-top: -15px;
+  left: -16px;
+  top: 50%;
+}
+
+/* Anchor elements below chat bubbles*/
+.post-actions {
+  margin: 5px;
+}
+
+/* Text area under anchor elements*/
+.comment-form .form-group {
+  width: 90%;
+}
+.comment-form input[type='text'] {
+  width: 100%;
+}
+
+/******************************************************************* Avatar Section *****************************************************************/
+/*The code below helps make the img's much smaller and easier to work with*/
+.comment-avatar img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+/*The code below gives shape and space to the comments made by other user's under the chat bubble*/
+.comment {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px;
+  margin:  5px 0 5px 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.comment p {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/******************************************************************* Friends Section ******************************************************************/
+.friends li {
+  list-style: none;
+  padding: 0 5px 0 5px;
+  display: inline;
+  float: left;
+}
+.friends img {
+  width: 55px;
+}
+
+
+/******************************************************************* Groups Section *****************************************************************/
+.groups img {
+  width: 80px;
+  float: left;
+  margin-right: 15px;
+}
+.group-item {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  overflow: auto;
+}
+
+
+/********************************************************************* Members Section *************************************************************/
+.members .member-row {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.members img {
+  margin-bottom: 5px;
+}
+
+.members .member-row btn {
+  margin-bottom: 50px;
+}
+
+/******************************************************************* Profile Section ****************************************************************/
+.profile ul {
+  margin-top: 30px;
+}
+
+.profile li {
+  list-style: none;
+  line-height: 1.9em;
+}
+
+.profile img {
+  margin-bottom: 20px;
+}
+
+/******************************************************************* Profile Section ****************************************************************/
+.photos {
+  margin: 0;
+  padding: 0;
+}
+
+.photos li {
+  list-style: none;
+  float: left;
+  margin: 5px;
+  width: 23%;
+}
+
+.photos img {
+  width: 100%;
+}
+
+/******************************************************************* Footer Section ******************************************************************/
+/*The code below style's the footer with a nice border and center's the content*/
+footer {
+  background: #f4f4f4;
+  height: 90px;
+  color: #04519b;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+  margin-top: 30px;
+  border-top: 7px solid #04519b;
+}
+
+/******************************************************************* Media Queries*******************************************************************/
+
+/*Navbar*/
+@media(min-width: 1366px){
+  .form-inline{
+    float: right;
+    margin-left: 10px;
+  }
+}
+/**
+@media(min-width: 1024px){
+  #signIn{
+    float: right;
+    margin-top: 12px;
+  }
+}
+**/
+@media(min-width: 1024px){
+  .form-inline{
+    margin-left: 30px;
+    margin-top: 12px;
+  }
+}
+
+@media(min-width: 991px){
+  .members p{
+    padding-top: 40px;
+  }
+}
+
+@media(min-width: 768px){
+  .form-inline{
+    margin-top: 12px;
+    float: left;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

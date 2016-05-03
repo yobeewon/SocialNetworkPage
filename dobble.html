@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  
+    <!-- **IMPORTANT** All images and logo's in this project were either created by the tutorial's developer that created the course that I used to help create this project or were used from google.com/images to simply be placeholders**  -->
+   
+    <title>Dobble</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+  
+  </head>
+
+  <body>
+    
+    <!-- Below is the header and the form I used for UserLogin which is placed above the nav bar -->
+    <header>
+      <div class="container">
+        <img src="img/logo.png" class="logo" alt="Boggle Website Logo">
+        
+        </div>
+    </header>
+    <!-- Header Ends -->
+    
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="dobble.html">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="groups.html">Groups</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="profile.html">Profile</a></li>
+          </ul>
+            <form class="form-inline">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail3" id="email">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputPassword3">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default" id="signIn">Sign in</button><br><!-- added a <br> tag after sign in so remember me was below it -->
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Remember me
+            </label>
+          </div>
+        </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+   
+   
+    <!-- Wall section of website -->
+   <section>
+     <div class="container">
+       <div class="row">
+         <div class="col-md-8">
+           <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Wall</h3>
+            </div>
+            <div class="panel-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Write on the wall"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+                <div class="pull-right">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i> Text</button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i> Image</button>
+                    <button type="button" class="btn btn-default"><i class="fa fa-video-camera"></i> Video</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+          <!-- User comments/wall section 1st post -->
+          <div class="panel panel-default post">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-2"><!-- Avatar area -->
+                  <a class="post-avatar thumbnail" href="profile.html"><img src="img/brotherCream4.jpg" alt="User Pic"><div class="text-center">DevUser1</div></a>
+                  <div class="likes text-center"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 7 Likes</div>
+                </div><!-- Avatar area Ends also col-sm-2 Ends -->
+                <div class="col-sm-10"><!-- Chat bubble starts here -->
+                  <div class="comments">
+                    <div class="comment">
+                      <p>Bacon ipsum dolor amet filet mignon pig drumstick ribeye meatloaf pork belly shankle.-bone strip steak boudin. Porchetta cow venison sirloin tenderloin biltong ground round pastrami jerky short loin chuck ham.</p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div><!-- Bubble div ends here-->
+                  <p class="post-actions"><a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Follow</a> - <a href="#">Share</a></p><!-- Under pic anchor links-->
+                  <div class="comment-form"><!-- comment-form needs to be wrapped around form below -->
+                    <form class="form-inline"><!-- Start of form -->
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Enter Comment">
+                      </div>
+                      <button type="submit" class="btn btn-default">Add</button>
+                    </form><!-- Form Ends -->
+                  </div><!-- comment-form wrap Ends -->
+                  <div class="clearfix"></div><!-- clearfix helps prevent strange wrapping with uneven content -->
+                   
+                    <div class="comments">
+                      <div class="comment">
+                        <a class="comment-avatar pull-left" href="#"><img src="img/brotherCream2.jpg" alt="User Pic"></a>
+                        <div class="comment-text">
+                          <p>Leberkas jowl sausage short ribs, filet ribeye. Turkey strip steak drumstick tri-tip meatball. </p>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      
+                      <div class="comment">
+                        <a class="comment-avatar pull-left" href="#"><img src="img/brotherCream3.jpg" alt="User Pic"></a>
+                        <div class="comment-text">
+                          <p>Landjaeger turducken pork pork chop turkey ribeye rump. Pork loin frankfurter fatback, biltong kevin. </p>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- User comments/wall section 2nd post -->
+          <div class="panel panel-default post">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-2"><!-- Avatar area -->
+                  <a class="post-avatar thumbnail" href="profile.html"><img src="img/brotherCream4.jpg" alt="User Pic"><div class="text-center">DevUser2</div></a>
+                  <div class="likes text-center"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 5 Likes</div>
+                </div><!-- Avatar area Ends also col-sm-2 Ends -->
+                <div class="col-sm-10"><!-- Chat bubble starts here -->
+                  <div class="comments">
+                    <div class="comment">
+                      <p>Spare ribs kielbasa bresaola picanha jowl shankle. Rump corned beef shoulder, leberkas prosciutto alcatra ribeye drumstick shankle short ribs kevin brisket chuck beef ribs biltong. Beef corned beef hamburger short loin ham. Pig boudin turducken frankfurter. T-bone sausage short ribs, strip steak boudin spare ribs bresaola hamburger drumstick sirloin.</p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div><!-- Bubble div ends here-->
+                  <p class="post-actions"><a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Follow</a> - <a href="#">Share</a></p><!-- Under pic anchor links-->
+                  <div class="comment-form"><!-- comment-form needs to be wrapped around form below -->
+                    <form class="form-inline"><!-- Start of form -->
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName1" placeholder="Enter Comment"><!-- Changed Id name to exampleInputName1 -->
+                      </div>
+                      <button type="submit" class="btn btn-default">Add</button>
+                    </form><!-- Form Ends -->
+                  </div><!-- comment-form wrap Ends -->
+                  <div class="clearfix"></div><!-- clearfix helps prevent strange wrapping with uneven content -->
+                   
+                    <div class="comments">
+                      <div class="comment">
+                        <a class="comment-avatar pull-left" href="#"><img src="img/brotherCream2.jpg" alt="User Pic"></a>
+                        <div class="comment-text">
+                          <p>Leberkas jowl sausage short ribs, filet mignon ribeye. Turkey strip steak drumstick tri-tip meatball. </p>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      
+                      <div class="comment">
+                        <a class="comment-avatar pull-left" href="#"><img src="img/brotherCream3.jpg" alt="User Pic"></a>
+                        <div class="comment-text">
+                          <p>Landjaeger turducken pork pork chop turkey ribeye rump. Pork loin boudin chuck kevin. </p>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- User comments/wall section 3rd post -->
+          <div class="panel panel-default post">
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-sm-2"><!-- Avatar area -->
+                  <a class="post-avatar thumbnail" href="profile.html"><img src="img/brotherCream4.jpg" alt="User Pic"><div class="text-center">DevUser3</div></a>
+                  <div class="likes text-center"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 2 Likes</div>
+                </div><!-- Avatar area Ends also col-sm-2 Ends -->
+                <div class="col-sm-10"><!-- Chat bubble starts here -->
+                  <div class="comments">
+                    <div class="comment">
+                      <p>Kielbasa boudin meatloaf prosciutto capicola chuck tongue biltong brisket. Turkey cow jerky filet mignon shankle fatback pork belly. Pork chop porchetta boudin kevin, brisket short ribs pastrami short loin. Ham hock spare ribs ham, bresaola pork belly short ribs kielbasa. Tri-tip tail pancetta beef ribs sausage capicola meatball pork chop, landjaeger t-bone.</p>
+                    </div>
+                    <div class="pointer-border"></div>
+                  </div><!-- Bubble div ends here-->
+                  <p class="post-actions"><a href="#">Comment</a> - <a href="#">Like</a> - <a href="#">Follow</a> - <a href="#">Share</a></p><!-- Under pic anchor links-->
+                  <div class="comment-form"><!-- comment-form needs to be wrapped around form below -->
+                    <form class="form-inline"><!-- Start of form -->
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputName3" placeholder="Enter Comment"><!-- Changed Id name to exampleInputName3 -->
+                      </div>
+                      <button type="submit" class="btn btn-default">Add</button>
+                    </form><!-- Form Ends -->
+                  </div><!-- comment-form wrap Ends -->
+                  <div class="clearfix"></div><!-- clearfix helps prevent strange wrapping with uneven content -->
+                   
+                    <div class="comments">
+                      <div class="comment">
+                        <a class="comment-avatar pull-left" href="#"><img src="img/brotherCream2.jpg" alt="User Pic"></a>
+                        <div class="comment-text">
+                          <p>Landjaeger turducken pork pork chop turkey ribeye rump. Spare ribs hamburger bacon shank. Pork loin frankfurter fatback, biltong salami boudin chuck kevin. </p>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                      
+                      <div class="clearfix"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div><!-- col-md-8 end -->
+         <!-- Wall section of website Ends -->
+         
+         <!-- Friends Section -->
+         <div class="col-md-4"><!-- col-md-4  -->
+          <div class="panel panel-default friends">
+            <div class="panel-heading">
+              <h3 class="panel-title"><li class="glyphicon glyphicon-user"></li> My Friends</h3>
+            </div>
+            <div class="panel-body">
+             <ul>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+               <li><a class="thumbnail" href="profile.html"><img src="img/user.png" alt="User Pic"></a></li>
+             </ul>
+             <div class="clearfix"></div>
+              <a class="btn btn-primary" href="#">View All Friends</a>
+            </div>
+          </div>
+          
+          <!-- Group Section -->
+          <div class="panel panel-default groups">
+            <div class="panel-heading">
+              <h3 class="panel-title">Groups</h3>
+            </div>
+            <div class="panel-body">
+              <div class="group-item">
+                <img src="img/group.png" alt="Group Icon">
+                <h4><a href="#">Sample Group One</a></h4>
+                <p>This is a Dobble social network sample group</p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="group-item">
+                <img src="img/group.png" alt="Group Icon">
+                <h4><a href="#">Sample Group Two</a></h4>
+                <p>This is a Dobble social network sample group</p>
+              </div>
+              <div class="clearfix"></div>
+              <div class="group-item">
+                <img src="img/group.png" alt="Group Icon">
+                <h4><a href="#">Sample Group Three</a></h4>
+                <p>This is a Dobble social network sample group</p>
+              </div>
+              <div class="clearfix"></div>
+              <a class="btn btn-primary" href="#">View All Groups</a>
+            </div>
+          </div>
+         </div><!-- col-md-4 Ends -->
+       </div>
+     </div>
+   </section>
+   
+
+  
+  
+  <!-- Footer Section -->
+   <footer>
+     <div class="container">
+       <p>Dobble Copyright &copy; 2016, All Rights Reserved</p>
+     </div>
+   </footer>
+   
+   
+   
+   
+   
+   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.js"></script>
+ 
+  </body>
+</html>
